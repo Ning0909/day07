@@ -1,0 +1,71 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1538205135292" stop="1538205135368">
+  <name>test01</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1538205135292" status="passed" stop="1538205135297">
+      <name>Test01.test01</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="11755-MainThread"/>
+        <label name="host" value="Ning.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1538205135296" status="passed" stop="1538205135296">
+          <name>执行学院新增操作</name>
+          <title>执行学院新增操作</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1538205135298" status="failed" stop="1538205135368">
+      <name>Test01.test02</name>
+      <failure>
+        <message>AssertionError: assert 0</message>
+        <stack-trace>self = &lt;test01.Test01 object at 0x102afee48&gt;
+
+    @allure.step("执行学院更新操作")
+    @pytest.allure.severity(pytest.allure.severity_level.CRITICAL)
+    def test02(self):
+        allure.attach("断言开始", "学院是否更新成功")
+        print("执行学院更新操作")
+        allure.attach("断言结束", "更新成功")
+&gt;       assert 0
+E       assert 0
+
+Scripts/test01.py:16: AssertionError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="critical"/>
+        <label name="thread" value="11755-MainThread"/>
+        <label name="host" value="Ning.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1538205135299" status="failed" stop="1538205135301">
+          <name>执行学院更新操作</name>
+          <title>执行学院更新操作</title>
+          <attachments>
+            <attachment source="f2851579-6b00-4fed-bb33-60078e975440-attachment.txt" title="断言开始" type="text/plain"/>
+            <attachment source="d2dad332-c9c1-43ba-9339-863ea0d92e9c-attachment.txt" title="断言结束" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+        <step start="1538205135365" status="failed" stop="1538205135365">
+          <name>执行学院更新操作</name>
+          <title>执行学院更新操作</title>
+          <attachments>
+            <attachment source="1de1d421-768c-4057-8021-53e028d63b7f-attachment.txt" title="断言开始" type="text/plain"/>
+            <attachment source="e63b540c-c499-4f1f-8205-aa6e128ae538-attachment.txt" title="断言结束" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
